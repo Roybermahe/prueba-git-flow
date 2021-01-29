@@ -9,6 +9,7 @@ export class AppComponent {
 
 
   sumarValores(a: number, b: number) {
-    return a + b;
+    let c = a + b;
+    return `a = ${a} + b = ${b}  = ${ c }`;
   }
 }
