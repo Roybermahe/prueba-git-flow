@@ -23,7 +23,6 @@ describe('AppComponent', () => {
   it(`should have as title 'prueba-git-ola-mundo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('prueba-git-ola-mundo');
   });
 
   it('should render title', () => {
@@ -31,5 +30,11 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('prueba-git-ola-mundo app is running!');
+  });
+
+  it('sumar valores', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.sumarValores(1, 2);
   });
 });
