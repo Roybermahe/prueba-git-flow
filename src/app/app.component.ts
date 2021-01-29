@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+
+  sumarValores(a: number, b: number) {
+    let c = a + b;
+    return `a = ${a} + b = ${b}  = ${ c }`;
+  }
 }
